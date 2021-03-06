@@ -1,0 +1,148 @@
+form {
+    width: 390px;
+    height: 470px;
+    margin: 50px auto;
+    border: 1px solid lightgray;
+}
+
+.header {
+    text-align: center;
+    padding-top: 15px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid lightgray;
+}
+
+.payment-text {
+    font-size: 25px;
+    margin: 0px;
+}
+
+p {
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#master {
+    height: 50px;
+}
+
+#discover {
+    height: 100px;
+}
+
+#paypal {
+    height: 50px;
+}
+
+#american {
+    height: 75px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    outline: none;
+}
+
+input {
+    margin-top: 5px;
+    width: 88%;
+    height: 30px;
+    border: 1px solid lightgray;
+    padding-left: 8px
+}
+
+.inputNumber {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.main {
+    margin-bottom: 50px;
+}
+
+#icon {
+    font-size: 22px;
+    margin-top: 5px;
+    border: 1px solid lightgray;
+    border-left: none;
+    padding: 5px;
+}
+
+.cardNumber {
+    margin: 20px;
+}
+
+.labels {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#CVlabel {
+    margin-left: 65px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+}
+
+#expiry {
+    width: 70%;
+    margin: 20px;
+}
+
+#cvc {
+    width: 125px;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+.cardOwner {
+    margin: 0px 20px;
+}
+
+#cardOwner {
+    width: 337px;
+}
+
+.footer {
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    background-color: #f5f5f5;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb95e;
+}
