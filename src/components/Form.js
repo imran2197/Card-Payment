@@ -15,6 +15,7 @@ const Form = () => {
     const [cardError, setCardError] = useState("");
     const [cvError, setCvError] = useState("");
     const [validateForm, setValidateForm] = useState("");
+    const [success, setSuccess] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -25,7 +26,7 @@ const Form = () => {
             cvCode,
             cardOwner
         })
-        .then((response) => console.log(response))
+        .then((response) => setSuccess(response.data.message))
         .catch(({response}) => setValidateForm(response.data.message));
 
         setCardNumber("");
@@ -82,13 +83,14 @@ const Form = () => {
                         <input type="text" name="expiry_date" placeholder="MM/YY" id="expiry" value={expiryDate} onChange={(e) => setExpiryDate(e.target.value)} />
                         <input type="number" name="cv_code" placeholder="CVC" id="cvc" value={cvCode} onChange={(e) => setCvCode(e.target.value)} maxLength={3} />
                         </div>
-                        <p>{cvError}</p>
                     </div>
+                    <p>{cvError}</p>
                     <div className="cardOwner">
                         <label>CARD OWNER</label>
                         <input type="text" name="card_owner" placeholder="Card Owner Name" id="cardOwner" value={cardOwner} onChange={(e) => setCardOwner(e.target.value)} />
                     </div>
                     <p>{validateForm}</p>
+                    <h5 id="success">{success}</h5>
                 </div>
                 <div className="footer">
                     <div className="button">
